@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>Explore the beauty of nature</p>
+    </header>
+
+    <nav class="filters">
+        <button class="filter active" data-category="all">All</button>
+        <button class="filter" data-category="nature">Nature</button>
+        <button class="filter" data-category="animals">Animals</button>
+        <button class="filter" data-category="city">City</button>
+    </nav>
+
+    <main class="gallery" id="gallery">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700"
+             alt="Beautiful nature" data-category="nature">
+
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=700"
+             alt="Mountain lake" data-category="nature">
+
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=700"
+             alt="Wild deer" data-category="animals">
+
+        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=700"
+             alt="Green forest" data-category="nature">
+
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=700"
+             alt="City buildings" data-category="city">
+
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=700"
+             alt="Cute cat" data-category="animals">
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="close" id="closeBtn" aria-label="Close">&times;</button>
+        <button class="nav prev" id="prevBtn" aria-label="Previous image">&#10094;</button>
+        <img id="lightboxImage" src="" alt="">
+        <button class="nav next" id="nextBtn" aria-label="Next image">&#10095;</button>
+        <p id="imageCaption"></p>
+    </div>
+
+    <footer>
+        <p>Created by Me | Internship Project</p>
+    </footer>
+
+</body>
+</html>
